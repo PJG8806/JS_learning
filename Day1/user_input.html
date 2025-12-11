@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 정보 입력받기</title>
+</head>
+<body>
+    <div>
+        <h1 class="name"></h1>
+        <p class="age"></p>
+        <p class="hobby"></p>
+    </div>    
+    <script>        
+        const nameElement=document.querySelector(".name");
+        let name = prompt("이름을 입력해주세요");
+        nameElement.innerText = "이름: " + name;
+
+        const ageElement=document.querySelector(".age");
+        let age =prompt("나이를 입력해주세요");
+        ageElement.innerText = "나이: " + age;
+
+        const hobbyElement=document.querySelector(".hobby");
+        let hobby = prompt("취미를 입력해주세요");
+        hobbyElement.innerText = "취미: " + hobby;
+    </script>
+</body>
+</html>
