@@ -32,3 +32,18 @@ userJoin.addEventListener('click', function(){
         message.innerHTML = "비밀번호가 유효하지 않습니다."
     }
 });
+
+const darkButton = document.querySelector('.darkButton');
+const topDiv = document.querySelector('.topDiv');
+const body = document.body;
+darkButton.addEventListener('click', function(){
+    if(!document.body.classList.contains('dark')){
+        darkButton.value = "화이트모드"
+        body.classList.add('dark');
+        topDiv.classList.add('dark');
+    }else{
+        darkButton.value = "다크모드"
+        body.classList.remove('dark');
+        topDiv.classList.remove('dark');
+    }
+});
