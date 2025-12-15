@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/userAdd.css">
+</head>
+<body>
+    <div class="topDiv">
+        <h2>회원가입</h2>
+        <form action="adminPage.html" class="userJoinForm">
+            <div>
+                <p>아이디</p>
+                <input type="text" class="userId" placeholder="아이디" required>
+            </div>            
+            <div>
+                <p>비밀번호</p>
+                <input type="password" class="userPw" placeholder="비밀번호" required>
+                <p class="pwMessage">* 영문, 숫자, 특수문자를 포함한 8자 이상 30자 미만이어야 합니다.</p>
+            </div>
+            <div>
+                <p>비밀번호 확인</p>
+                <input type="password" class="userPw2" placeholder="비밀번호 확인" required>
+            </div>
+            <div>
+                <p>이름</p>
+                <input type="text" class="userName" placeholder="이름" required>
+            </div>
+            <div>
+                <p>전화번호</p>
+                <input type="text" class="userPhone" placeholder="전화번호" required pattern="010-\d{4}-\d{4}$">
+            </div>
+            <div>
+                <p>성별</p>
+                <input type="radio" name="gender" class="gender" value="M" checked>남자
+                <input type="radio" name="gender" class="gender" value="W">여자
+            </div>
+            <div>
+                <p>이메일</p>
+                <input type="email" class="userEmail" placeholder="이메일" required>
+            </div>
+            <div>                
+                <input type="button" value="가입" class="userJoin">
+                <p class="checkMessage"></p>
+            </div>
+        </form>
+    </div>
+    <script src="./js/userAdd.js"></script>
+</body>
+</html>

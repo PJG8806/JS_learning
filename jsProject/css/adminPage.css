@@ -1,0 +1,39 @@
+.pagination{
+    justify-content: center;
+    display: flex;
+    margin-top: 40px;
+}
+
+html{
+    background-color: bisque;
+}
+
+body{
+    margin: 30px;
+    padding: 10px 0px 10px 0px;
+    border-radius: 20px;
+    height: 850px;
+}
+
+.nowTime{
+    font-size: 20px;    
+}
+
+.topSort{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+html.dark{
+    background-color: gray;
+}
+
+body.dark{
+    background-color: black;
+    color: white;
+}
+
+input{
+    font-size: 20px;
+}
